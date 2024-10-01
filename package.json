@@ -1,0 +1,31 @@
+{
+  "name": "chimpance",
+  "version": "1.0.0",
+  "description": "Un sistema para el manejo de stock",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "author": "Lucas Casadei",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^20.2.0",
+    "electron-builder": "^23.6.0"
+  },
+  "build": {
+    "appId": "com.tusitioweb.app",
+    "productName": "Chimpance",       
+    "directories": {
+      "output": "build"       
+    },
+    "win": {
+      "target": "nsis",       
+      "icon": "Logo.ico"      
+    },
+    "mac": {
+      "target": "dmg",       
+      "icon": "Logo.ico"       
+    }
+  }
+}
